@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UL-94 V-0 테스트 뉴스 갤러리</title>
+    <style>
+        /* 전체 레이아웃 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #0b3d91;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1rem;
+        }
+
+        /* 갤러리 컨테이너 */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* 카드 스타일 */
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin: 0 0 10px;
+            font-size: 1.2rem;
+            color: #0b3d91;
+        }
+
+        .card-content p {
+            margin: 0 0 10px;
+            font-size: 0.95rem;
+            line-height: 1.4;
+            color: #555;
+        }
+
+        .card-content a {
+            text-decoration: none;
+            color: #0b3d91;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 0.85rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>UL-94 V-0 테스트 뉴스 갤러리</h1>
+        <p>최신 UL-94 V-0 관련 테스트 기사와 자료를 한눈에</p>
+    </header>
+
+    <main>
+        <div class="gallery">
+            <!-- 카드 1 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/400x180.png?text=Article+1" alt="기사 이미지 1">
+                <div class="card-content">
+                    <h3>UL-94 V-0 테스트 방법 개요</h3>
+                    <p>UL-94 V-0 테스트를 처음 접하는 사람들을 위한 기본 가이드와 최신 테스트 동향을 소개합니다.</p>
+                    <a href="#">자세히 보기 →</a>
+                </div>
+            </div>
+
+            <!-- 카드 2 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/400x180.png?text=Article+2" alt="기사 이미지 2">
+                <div class="card-content">
+                    <h3>UL-94 V-0 인증 사례 분석</h3>
+                    <p>최근 UL-94 V-0 인증을 획득한 플라스틱 소재 사례와 시험 결과를 심층 분석합니다.</p>
+                    <a href="#">자세히 보기 →</a>
+                </div>
+            </div>
+
+            <!-- 카드 3 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/400x180.png?text=Article+3" alt="기사 이미지 3">
+                <div class="card-content">
+                    <h3>UL-94 V-0 등급 유지 전략</h3>
+                    <p>플라스틱 제조사들이 UL-94 V-0 등급을 안정적으로 유지하기 위해 사용하는 최신 기술과 관리 방법.</p>
+                    <a href="#">자세히 보기 →</a>
+                </div>
+            </d
